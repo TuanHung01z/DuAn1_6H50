@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             panel_DichVu = new Panel();
-            comboBox1 = new ComboBox();
-            button3 = new Button();
-            textBox2 = new TextBox();
-            button4 = new Button();
-            textBox3 = new TextBox();
+            Txt_SvcName = new TextBox();
+            pictureBox2 = new PictureBox();
+            BTN_Delete = new Button();
+            BTN_CreateSvc = new Button();
+            Txt_Details = new TextBox();
+            BTN_Update = new Button();
+            Txt_SvcPrice = new TextBox();
             label2 = new Label();
-            textBox5 = new TextBox();
+            Txt_ServiceID = new TextBox();
             label1 = new Label();
             label13 = new Label();
             pictureBox4 = new PictureBox();
@@ -43,23 +45,26 @@
             pictureBox3 = new PictureBox();
             label3 = new Label();
             pictureBox1 = new PictureBox();
-            dataGridView1 = new DataGridView();
+            Screen_Svc = new DataGridView();
             panel_DichVu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Screen_Svc).BeginInit();
             SuspendLayout();
             // 
             // panel_DichVu
             // 
-            panel_DichVu.Controls.Add(comboBox1);
-            panel_DichVu.Controls.Add(button3);
-            panel_DichVu.Controls.Add(textBox2);
-            panel_DichVu.Controls.Add(button4);
-            panel_DichVu.Controls.Add(textBox3);
+            panel_DichVu.Controls.Add(Txt_SvcName);
+            panel_DichVu.Controls.Add(pictureBox2);
+            panel_DichVu.Controls.Add(BTN_Delete);
+            panel_DichVu.Controls.Add(BTN_CreateSvc);
+            panel_DichVu.Controls.Add(Txt_Details);
+            panel_DichVu.Controls.Add(BTN_Update);
+            panel_DichVu.Controls.Add(Txt_SvcPrice);
             panel_DichVu.Controls.Add(label2);
-            panel_DichVu.Controls.Add(textBox5);
+            panel_DichVu.Controls.Add(Txt_ServiceID);
             panel_DichVu.Controls.Add(label1);
             panel_DichVu.Controls.Add(label13);
             panel_DichVu.Controls.Add(pictureBox4);
@@ -67,109 +72,134 @@
             panel_DichVu.Controls.Add(pictureBox3);
             panel_DichVu.Controls.Add(label3);
             panel_DichVu.Controls.Add(pictureBox1);
-            panel_DichVu.Controls.Add(dataGridView1);
-            panel_DichVu.Location = new Point(2, 10);
-            panel_DichVu.Margin = new Padding(3, 2, 3, 2);
+            panel_DichVu.Controls.Add(Screen_Svc);
+            panel_DichVu.Location = new Point(-1, -1);
             panel_DichVu.Name = "panel_DichVu";
-            panel_DichVu.Size = new Size(808, 752);
+            panel_DichVu.Size = new Size(821, 572);
             panel_DichVu.TabIndex = 0;
             // 
-            // comboBox1
+            // Txt_SvcName
             // 
-            comboBox1.BackColor = Color.FromArgb(255, 138, 0);
-            comboBox1.FlatStyle = FlatStyle.Popup;
-            comboBox1.ForeColor = Color.Black;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(290, 350);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(247, 24);
-            comboBox1.TabIndex = 89;
+            Txt_SvcName.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_SvcName.BorderStyle = BorderStyle.None;
+            Txt_SvcName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_SvcName.ForeColor = Color.Black;
+            Txt_SvcName.Location = new Point(297, 457);
+            Txt_SvcName.Margin = new Padding(3, 2, 3, 2);
+            Txt_SvcName.Name = "Txt_SvcName";
+            Txt_SvcName.Size = new Size(239, 22);
+            Txt_SvcName.TabIndex = 125;
             // 
-            // button3
+            // pictureBox2
             // 
-            button3.BackColor = Color.FromArgb(112, 88, 61);
-            button3.FlatStyle = FlatStyle.System;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(556, 339);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(152, 34);
-            button3.TabIndex = 87;
-            button3.Text = "Tạo Dịch Vụ";
-            button3.UseVisualStyleBackColor = false;
+            pictureBox2.Image = Properties.Resources.Rectangle_481;
+            pictureBox2.Location = new Point(293, 455);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(247, 26);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 126;
+            pictureBox2.TabStop = false;
             // 
-            // textBox2
+            // BTN_Delete
             // 
-            textBox2.BackColor = Color.FromArgb(255, 138, 0);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.Black;
-            textBox2.Location = new Point(294, 434);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(239, 22);
-            textBox2.TabIndex = 86;
+            BTN_Delete.BackColor = Color.FromArgb(112, 88, 61);
+            BTN_Delete.FlatStyle = FlatStyle.System;
+            BTN_Delete.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BTN_Delete.ForeColor = Color.White;
+            BTN_Delete.Location = new Point(558, 526);
+            BTN_Delete.Margin = new Padding(3, 2, 3, 2);
+            BTN_Delete.Name = "BTN_Delete";
+            BTN_Delete.Size = new Size(152, 34);
+            BTN_Delete.TabIndex = 124;
+            BTN_Delete.Text = "Xóa";
+            BTN_Delete.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // BTN_CreateSvc
             // 
-            button4.BackColor = Color.FromArgb(112, 88, 61);
-            button4.FlatStyle = FlatStyle.System;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(556, 393);
-            button4.Margin = new Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new Size(152, 34);
-            button4.TabIndex = 88;
-            button4.Text = "Cập Nhật";
-            button4.UseVisualStyleBackColor = false;
+            BTN_CreateSvc.BackColor = Color.FromArgb(112, 88, 61);
+            BTN_CreateSvc.FlatStyle = FlatStyle.System;
+            BTN_CreateSvc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BTN_CreateSvc.ForeColor = Color.White;
+            BTN_CreateSvc.Location = new Point(558, 417);
+            BTN_CreateSvc.Margin = new Padding(3, 2, 3, 2);
+            BTN_CreateSvc.Name = "BTN_CreateSvc";
+            BTN_CreateSvc.Size = new Size(152, 34);
+            BTN_CreateSvc.TabIndex = 116;
+            BTN_CreateSvc.Text = "Tạo Dịch Vụ";
+            BTN_CreateSvc.UseVisualStyleBackColor = false;
+            BTN_CreateSvc.Click += BTN_CreateSvc_Click;
             // 
-            // textBox3
+            // Txt_Details
             // 
-            textBox3.BackColor = Color.FromArgb(255, 138, 0);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.Black;
-            textBox3.Location = new Point(294, 395);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(239, 22);
-            textBox3.TabIndex = 87;
+            Txt_Details.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_Details.BorderStyle = BorderStyle.None;
+            Txt_Details.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_Details.ForeColor = Color.Black;
+            Txt_Details.Location = new Point(297, 539);
+            Txt_Details.Margin = new Padding(3, 2, 3, 2);
+            Txt_Details.Name = "Txt_Details";
+            Txt_Details.Size = new Size(239, 22);
+            Txt_Details.TabIndex = 115;
+            // 
+            // BTN_Update
+            // 
+            BTN_Update.BackColor = Color.FromArgb(112, 88, 61);
+            BTN_Update.FlatStyle = FlatStyle.System;
+            BTN_Update.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BTN_Update.ForeColor = Color.White;
+            BTN_Update.Location = new Point(558, 471);
+            BTN_Update.Margin = new Padding(3, 2, 3, 2);
+            BTN_Update.Name = "BTN_Update";
+            BTN_Update.Size = new Size(152, 34);
+            BTN_Update.TabIndex = 118;
+            BTN_Update.Text = "Cập Nhật";
+            BTN_Update.UseVisualStyleBackColor = false;
+            // 
+            // Txt_SvcPrice
+            // 
+            Txt_SvcPrice.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_SvcPrice.BorderStyle = BorderStyle.None;
+            Txt_SvcPrice.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_SvcPrice.ForeColor = Color.Black;
+            Txt_SvcPrice.Location = new Point(297, 500);
+            Txt_SvcPrice.Margin = new Padding(3, 2, 3, 2);
+            Txt_SvcPrice.Name = "Txt_SvcPrice";
+            Txt_SvcPrice.Size = new Size(239, 22);
+            Txt_SvcPrice.TabIndex = 117;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(129, 430);
+            label2.Location = new Point(132, 535);
             label2.Name = "label2";
             label2.Size = new Size(151, 25);
-            label2.TabIndex = 56;
+            label2.TabIndex = 111;
             label2.Text = "Chi Tiết Dịch Vụ:";
             // 
-            // textBox5
+            // Txt_ServiceID
             // 
-            textBox5.BackColor = Color.FromArgb(255, 138, 0);
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.ForeColor = Color.Black;
-            textBox5.Location = new Point(294, 312);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(239, 22);
-            textBox5.TabIndex = 88;
+            Txt_ServiceID.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_ServiceID.BorderStyle = BorderStyle.None;
+            Txt_ServiceID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_ServiceID.ForeColor = Color.Black;
+            Txt_ServiceID.Location = new Point(297, 417);
+            Txt_ServiceID.Margin = new Padding(3, 2, 3, 2);
+            Txt_ServiceID.Name = "Txt_ServiceID";
+            Txt_ServiceID.Size = new Size(239, 22);
+            Txt_ServiceID.TabIndex = 119;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(129, 391);
+            label1.Location = new Point(132, 496);
             label1.Name = "label1";
             label1.Size = new Size(115, 25);
-            label1.TabIndex = 57;
+            label1.TabIndex = 112;
             label1.Text = "Giá Dịch Vụ:";
             // 
             // label13
@@ -177,21 +207,21 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(129, 349);
+            label13.Location = new Point(132, 454);
             label13.Name = "label13";
             label13.Size = new Size(140, 25);
-            label13.TabIndex = 59;
+            label13.TabIndex = 113;
             label13.Text = "Mô Tả Dịch Vụ:";
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Rectangle_481;
-            pictureBox4.Location = new Point(290, 310);
+            pictureBox4.Location = new Point(293, 415);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(247, 26);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 93;
+            pictureBox4.TabIndex = 123;
             pictureBox4.TabStop = false;
             // 
             // label7
@@ -199,56 +229,56 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(129, 308);
+            label7.Location = new Point(132, 413);
             label7.Name = "label7";
             label7.Size = new Size(114, 25);
-            label7.TabIndex = 60;
+            label7.TabIndex = 114;
             label7.Text = "Mã Dịch Vụ:";
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Rectangle_481;
-            pictureBox3.Location = new Point(290, 393);
+            pictureBox3.Location = new Point(293, 498);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(247, 26);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 92;
+            pictureBox3.TabIndex = 122;
             pictureBox3.TabStop = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(3, 22);
+            label3.Location = new Point(9, 9);
             label3.Name = "label3";
-            label3.Size = new Size(78, 25);
-            label3.TabIndex = 51;
+            label3.Size = new Size(119, 37);
+            label3.TabIndex = 110;
             label3.Text = "Dịch Vụ";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Rectangle_481;
-            pictureBox1.Location = new Point(290, 432);
+            pictureBox1.Location = new Point(293, 537);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(247, 26);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 91;
+            pictureBox1.TabIndex = 121;
             pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // Screen_Svc
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 65);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(808, 214);
-            dataGridView1.TabIndex = 0;
+            Screen_Svc.BackgroundColor = Color.White;
+            Screen_Svc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Screen_Svc.Location = new Point(6, 52);
+            Screen_Svc.Margin = new Padding(3, 2, 3, 2);
+            Screen_Svc.Name = "Screen_Svc";
+            Screen_Svc.RowHeadersWidth = 51;
+            Screen_Svc.RowTemplate.Height = 29;
+            Screen_Svc.Size = new Size(808, 348);
+            Screen_Svc.TabIndex = 109;
             // 
             // DichVu
             // 
@@ -262,30 +292,33 @@
             Text = "DichVu";
             panel_DichVu.ResumeLayout(false);
             panel_DichVu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Screen_Svc).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel_DichVu;
-        private DataGridView dataGridView1;
-        private Label label3;
+        private Button BTN_CreateSvc;
+        private TextBox Txt_Details;
+        private Button BTN_Update;
+        private TextBox Txt_SvcPrice;
         private Label label2;
+        private TextBox Txt_ServiceID;
         private Label label1;
         private Label label13;
-        private Label label7;
-        private Button button3;
-        private Button button4;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox5;
         private PictureBox pictureBox4;
+        private Label label7;
         private PictureBox pictureBox3;
+        private Label label3;
         private PictureBox pictureBox1;
+        private DataGridView Screen_Svc;
+        private Button BTN_Delete;
+        private TextBox Txt_SvcName;
+        private PictureBox pictureBox2;
     }
 }

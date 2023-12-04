@@ -17,23 +17,13 @@ namespace PRL
             InitializeComponent();
         }
 
-        private void Vouchers_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
         public Panel Voucher()
         {
-            return panel1;
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
+            return panel_Voucher;
         }
     }
 }

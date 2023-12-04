@@ -479,17 +479,9 @@ namespace PRL
             Panel_ThongKe.BackColor = Color.Orange;
             panel_DangXuat.BackColor = Color.Orange;
         }
-        private void UserInterfaceRefresh()
-        {
-            vc.Hide();
-
-        }
 
         private void Panel_Voucher_MouseDown(object sender, MouseEventArgs e)
         {
-            UserInterfaceRefresh();
-            vc.Show();
-
             Panel_LichChieu.BackColor = Color.Orange;
             Panel_Phim.BackColor = Color.Orange;
             Panel_KhachHang.BackColor = Color.Orange;
@@ -505,7 +497,6 @@ namespace PRL
 
         private void Panel_TheThanhVien_MouseDown(object sender, MouseEventArgs e)
         {
-            UserInterfaceRefresh();
             Panel_LichChieu.BackColor = Color.Orange;
             Panel_Phim.BackColor = Color.Orange;
             Panel_KhachHang.BackColor = Color.Orange;
@@ -602,8 +593,6 @@ namespace PRL
             panel2.Controls.Add(DV);
             panel2.Controls.Add(Ycdv);
             panel2.Controls.Add(TK);
-
-
         }
 
         private void Panel_TaoHoaDon_Click(object sender, EventArgs e)

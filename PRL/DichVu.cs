@@ -12,6 +12,8 @@ namespace PRL
 {
     public partial class DichVu : Form
     {
+        List<DichVu>? Temp_DichVu = null;
+
         public DichVu()
         {
             InitializeComponent();
@@ -19,6 +21,17 @@ namespace PRL
         public Panel dichVu()
         {
             return panel_DichVu;
+        }
+
+        private void BTN_CreateSvc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GetServiceList()
+        {
+            Temp_DichVu = null;
+            // it's been 6 months. where the hell is service...........
         }
     }
 }
