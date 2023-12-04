@@ -31,7 +31,7 @@ namespace PRL
         private void GetServiceList()
         {
             Temp_DichVu = null;
-            // it's been 6 months. where the hell is service...........
+            // it's been 6 months. where the hell is service............
         }
     }
 }
