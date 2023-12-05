@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace DAL1.DomainClass
 {
-    internal class uhhhhhhh_ko_co_service_vs_ca_repository_a
+    public class TheThanhVien
     {
-        // pls help
     }
 }
