@@ -1,4 +1,5 @@
 ﻿using BUS.Services;
+using DAL1.DomainClass;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,23 @@ namespace PRL
 
         private void BTN_CreateSvc_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrWhiteSpace(Txt_ServiceID.Text) ||
+                string.IsNullOrWhiteSpace(Txt_SvcName.Text)   ||
+                string.IsNullOrWhiteSpace(Txt_SvcPrice.Text)  ||
+                string.IsNullOrWhiteSpace(Txt_Details.Text))
+            {
+                MessageBox.Show("Thiếu thông tin", "NO...........", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            var DichVuMoi = new DAL1.DomainClass.DichVu();
+            DichVuMoi.MaDichVu = Txt_ServiceID.Text;
+            DichVuMoi.TenDichVu = Txt_SvcName.Text;
+            DichVuMoi.GiaDichVu = int.Parse(Txt_SvcPrice.Text);
+            DichVuMoi.TrangThaiDichVu = Txt_Details.Text;
+            Svc_DichVu.Them_Moi(DichVuMoi);
+            MessageBox.Show("Thêm thành công", "DONEZO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            GetServiceList();
+            ResetAll();
         }
 
         private void GetServiceList()
@@ -38,6 +55,14 @@ namespace PRL
             Screen_Svc.Columns[2].HeaderText = "Giá";
             Screen_Svc.Columns[3].HeaderText = "Trạng thái";
             Screen_Svc.Columns[4].Visible = false;
+        }
+
+        private void ResetAll()
+        {
+            Txt_ServiceID.Text = string.Empty;
+            Txt_SvcName.Text = string.Empty;
+            Txt_SvcPrice.Text = string.Empty;
+            Txt_Details.Text = string.Empty;
         }
     }
 }
