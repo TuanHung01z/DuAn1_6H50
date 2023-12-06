@@ -25,8 +25,9 @@ public partial class HoaDon
     [StringLength(20)]
     public string TrangThaiThanhToan { get; set; } = null!;
 
-    [StringLength(10)]
-    public string MaKhachHang { get; set; } = null!;
+    [Column("SDTKhachHang")]
+    [StringLength(20)]
+    public string SdtkhachHang { get; set; } = null!;
 
     [StringLength(10)]
     public string? MaVoucher { get; set; }
@@ -37,11 +38,11 @@ public partial class HoaDon
     [InverseProperty("MaHoaDonNavigation")]
     public virtual ICollection<HoaDonChiTiet> HoaDonChiTiets { get; set; } = new List<HoaDonChiTiet>();
 
-    [ForeignKey("MaKhachHang")]
-    [InverseProperty("HoaDons")]
-    public virtual KhachHang MaKhachHangNavigation { get; set; } = null!;
-
     [ForeignKey("MaVoucher")]
     [InverseProperty("HoaDons")]
     public virtual Voucher? MaVoucherNavigation { get; set; }
+
+    [ForeignKey("SdtkhachHang")]
+    [InverseProperty("HoaDons")]
+    public virtual KhachHang SdtkhachHangNavigation { get; set; } = null!;
 }
