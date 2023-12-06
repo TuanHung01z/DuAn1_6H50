@@ -136,7 +136,7 @@
             // 
             // BTN_CreateSvc
             // 
-            BTN_CreateSvc.BackColor = Color.FromArgb(112, 88, 61);
+            BTN_CreateSvc.BackColor = Color.Transparent;
             BTN_CreateSvc.FlatStyle = FlatStyle.System;
             BTN_CreateSvc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BTN_CreateSvc.ForeColor = Color.White;
@@ -273,7 +273,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(9, 9);
+            label3.Location = new Point(8, 5);
             label3.Name = "label3";
             label3.Size = new Size(119, 37);
             label3.TabIndex = 101;
@@ -296,7 +296,7 @@
             Screen_Svc.AllowUserToDeleteRows = false;
             Screen_Svc.AllowUserToResizeColumns = false;
             Screen_Svc.AllowUserToResizeRows = false;
-            Screen_Svc.BackgroundColor = Color.Black;
+            Screen_Svc.BackgroundColor = SystemColors.ButtonHighlight;
             Screen_Svc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             Screen_Svc.EditMode = DataGridViewEditMode.EditProgrammatically;
             Screen_Svc.Location = new Point(3, 48);

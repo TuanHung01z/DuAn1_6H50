@@ -24,18 +24,16 @@ namespace PRL
         {
             dtgview.Rows.Clear();
             dtgview.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtgview.ColumnCount = 6;
+            dtgview.ColumnCount = 4;
             dtgview.Columns[0].Name = "STT";
             dtgview.Columns[1].Name = "Tên";
             dtgview.Columns[2].Name = "Địa chỉ";
-            dtgview.Columns[3].Name = "Điểm";
-            dtgview.Columns[4].Name = "Số Điện Thoại";
-            dtgview.Columns[5].Name = "Hạng khách hàng";
+            dtgview.Columns[3].Name = "Số Điện Thoại";
             _listKH = _service.GetAll(search);
             foreach (var kh in _service.GetAll(txtSearch.Text))
             {
                 int stt = _listKH.IndexOf(kh) + 1;
-                dtgview.Rows.Add(stt, kh.TenKhachHang, kh.DiaChi, kh.TichDiem, kh.SdtkhachHang, kh.HangKhachHang);
+                dtgview.Rows.Add(stt, kh.TenKhachHang, kh.DiaChi, kh.SdtkhachHang);
             }
         }
         private void dtgView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -48,9 +46,7 @@ namespace PRL
             var kh = new KhachHang();
             kh.TenKhachHang = txtTen.Text;
             kh.DiaChi = txtDiachi.Text;
-            kh.TichDiem = Convert.ToInt32(txtTichDiem.Text);
             kh.SdtkhachHang = txtSDT.Text;
-            kh.HangKhachHang = cmbHangKhachHang.SelectedItem.ToString();
             var option = MessageBox.Show("Xác nhận muốn sửa khách hàng?", "Xác nhận", MessageBoxButtons.YesNo);
             if (option == DialogResult.Yes)
             {
@@ -68,9 +64,7 @@ namespace PRL
             var kh = new KhachHang();
             kh.TenKhachHang = txtTen.Text;
             kh.DiaChi = txtDiachi.Text;
-            kh.TichDiem = Convert.ToInt32(txtTichDiem.Text);
             kh.SdtkhachHang = txtSDT.Text;
-            kh.HangKhachHang = cmbHangKhachHang.SelectedItem.ToString();
             var option = MessageBox.Show("Xác nhận muốn thêm khách hàng?", "Xác nhận", MessageBoxButtons.YesNo);
             if (option == DialogResult.Yes)
             {
@@ -111,9 +105,7 @@ namespace PRL
             _idWhenClick = obj.SdtkhachHang;
             txtTen.Text = obj.TenKhachHang;
             txtDiachi.Text = obj.DiaChi;
-            txtTichDiem.Text = obj.TichDiem.ToString();
             txtSDT.Text = obj.SdtkhachHang;
-            cmbHangKhachHang.SelectedItem = obj.HangKhachHang;
         }
 
         private void cmbHangKhachHang_SelectedIndexChanged(object sender, EventArgs e)

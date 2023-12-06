@@ -58,8 +58,6 @@ namespace BUS.Services
             var clone = _repos.GetAllKH().FirstOrDefault(x => x.SdtkhachHang == kh.SdtkhachHang);
             clone.TenKhachHang = kh.TenKhachHang;
             clone.DiaChi = kh.DiaChi;
-            clone.TichDiem = kh.TichDiem;
-            clone.HangKhachHang = kh.HangKhachHang;
             if (_repos.UpdateKH(clone) == true)
             {
                 return "Sửa khách hàng thành công";
