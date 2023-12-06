@@ -13,8 +13,8 @@ public partial class TheLoai
     [StringLength(10)]
     public string MaTheLoai { get; set; } = null!;
 
-    [StringLength(50)]
-    public string? TenTheLoai { get; set; }
+    [StringLength(20)]
+    public string TenTheLoai { get; set; } = null!;
 
     [InverseProperty("MaTheLoaiNavigation")]
     public virtual ICollection<Phim> Phims { get; set; } = new List<Phim>();

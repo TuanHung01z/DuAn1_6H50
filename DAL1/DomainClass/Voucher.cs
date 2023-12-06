@@ -13,13 +13,12 @@ public partial class Voucher
     [StringLength(10)]
     public string MaVoucher { get; set; } = null!;
 
-    [StringLength(100)]
+    [StringLength(30)]
     public string LoaiVoucher { get; set; } = null!;
 
-    [Column(TypeName = "int")]
-    public int? GiaTri { get; set; }
+    public int GiaTri { get; set; }
 
-    [Column(TypeName = "datetime")]
+    [Column(TypeName = "date")]
     public DateTime? HanSuDung { get; set; }
 
     [InverseProperty("MaVoucherNavigation")]

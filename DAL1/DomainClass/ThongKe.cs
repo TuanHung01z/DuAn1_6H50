@@ -13,11 +13,9 @@ public partial class ThongKe
     [StringLength(10)]
     public string MaThongKe { get; set; } = null!;
 
-    [Column(TypeName = "money")]
-    public decimal? DoanhThuPhimNgay { get; set; }
+    public int? DoanhThuPhimNgay { get; set; }
 
-    [Column(TypeName = "money")]
-    public decimal? DoanhThuDichVuNgay { get; set; }
+    public int? DoanhThuDichVuNgay { get; set; }
 
     public int? SoVeDaBan { get; set; }
 }

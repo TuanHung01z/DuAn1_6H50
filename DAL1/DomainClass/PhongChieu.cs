@@ -10,8 +10,7 @@ namespace DAL1.DomainClass;
 public partial class PhongChieu
 {
     [Key]
-    [StringLength(10)]
-    public string MaPhongChieu { get; set; } = null!;
+    public int MaPhongChieu { get; set; }
 
     public int SoGhe { get; set; }
 
@@ -19,9 +18,6 @@ public partial class PhongChieu
 
     [StringLength(30)]
     public string? TrangThai { get; set; }
-
-    [InverseProperty("MaPhongChieuNavigation")]
-    public virtual ICollection<Ghe> Ghes { get; set; } = new List<Ghe>();
 
     [InverseProperty("MaPhongChieuNavigation")]
     public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();

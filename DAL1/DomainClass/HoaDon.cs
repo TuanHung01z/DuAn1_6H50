@@ -13,20 +13,17 @@ public partial class HoaDon
     [StringLength(10)]
     public string MaHoaDon { get; set; } = null!;
 
-    [StringLength(30)]
+    [StringLength(20)]
     public string HinhThucThanhToan { get; set; } = null!;
 
-    [Column(TypeName = "money")]
-    public decimal SoTien { get; set; }
-
     [Column(TypeName = "datetime")]
-    public DateTime? ThoiGianThanhToan { get; set; }
+    public DateTime ThoiGianThanhToan { get; set; }
 
     [StringLength(20)]
     public string TrangThaiThanhToan { get; set; } = null!;
 
     [Column("SDTKhachHang")]
-    [StringLength(20)]
+    [StringLength(10)]
     public string SdtkhachHang { get; set; } = null!;
 
     [StringLength(10)]

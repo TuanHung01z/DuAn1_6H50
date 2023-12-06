@@ -13,13 +13,12 @@ public partial class DichVu
     [StringLength(10)]
     public string MaDichVu { get; set; } = null!;
 
-    [StringLength(70)]
+    [StringLength(50)]
     public string TenDichVu { get; set; } = null!;
 
-    [Column(TypeName = "int")]
     public int GiaDichVu { get; set; }
 
-    [StringLength(70)]
+    [StringLength(50)]
     public string TrangThaiDichVu { get; set; } = null!;
 
     [InverseProperty("MaDichVuNavigation")]

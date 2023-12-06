@@ -13,11 +13,11 @@ public partial class Phim
     [StringLength(10)]
     public string MaPhim { get; set; } = null!;
 
-    [StringLength(70)]
+    [StringLength(50)]
     public string TenPhim { get; set; } = null!;
 
     [StringLength(30)]
-    public string NgonNgu { get; set; } = null!;
+    public string? NgonNgu { get; set; }
 
     [StringLength(10)]
     public string MaTheLoai { get; set; } = null!;
@@ -28,16 +28,16 @@ public partial class Phim
     [StringLength(10)]
     public string MaDienVien { get; set; } = null!;
 
+    [StringLength(150)]
     public string? MoTa { get; set; }
 
     [StringLength(10)]
     public string? Rated { get; set; }
 
-    [Column(TypeName = "datetime")]
+    [Column(TypeName = "date")]
     public DateTime NgayPhatHanh { get; set; }
 
-    [Column(TypeName = "decimal(18, 0)")]
-    public decimal? ThoiLuong { get; set; }
+    public int? ThoiLuong { get; set; }
 
     [InverseProperty("MaPhimNavigation")]
     public virtual ICollection<LichChieu> LichChieus { get; set; } = new List<LichChieu>();

@@ -16,11 +16,10 @@ public partial class LichChieu
     [StringLength(10)]
     public string MaPhim { get; set; } = null!;
 
-    [StringLength(10)]
-    public string MaPhongChieu { get; set; } = null!;
+    public int MaPhongChieu { get; set; }
 
     [Column(TypeName = "datetime")]
-    public DateTime? ThoiGianChieu { get; set; }
+    public DateTime ThoiGianChieu { get; set; }
 
     [ForeignKey("MaPhim")]
     [InverseProperty("LichChieus")]

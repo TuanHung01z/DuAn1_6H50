@@ -16,8 +16,7 @@ public partial class Ve
     [StringLength(10)]
     public string MaPhim { get; set; } = null!;
 
-    [StringLength(10)]
-    public string MaPhongChieu { get; set; } = null!;
+    public int MaPhongChieu { get; set; }
 
     [StringLength(10)]
     public string MaGhe { get; set; } = null!;

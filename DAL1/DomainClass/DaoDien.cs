@@ -16,6 +16,7 @@ public partial class DaoDien
     [StringLength(30)]
     public string TenDaoDien { get; set; } = null!;
 
+    [StringLength(150)]
     public string? MoTaDaoDien { get; set; }
 
     [InverseProperty("MaDaoDienNavigation")]

@@ -13,21 +13,14 @@ public partial class Ghe
     [StringLength(10)]
     public string MaGhe { get; set; } = null!;
 
-    [StringLength(10)]
-    public string MaPhongChieu { get; set; } = null!;
+    public int MaHangGhe { get; set; }
 
     [StringLength(20)]
-    public string HangGhe { get; set; } = null!;
-
-    [Column(TypeName = "money")]
-    public decimal GiaGhe { get; set; }
-
-    [StringLength(70)]
     public string TrangThai { get; set; } = null!;
 
-    [ForeignKey("MaPhongChieu")]
+    [ForeignKey("MaHangGhe")]
     [InverseProperty("Ghes")]
-    public virtual PhongChieu MaPhongChieuNavigation { get; set; } = null!;
+    public virtual HangGhe MaHangGheNavigation { get; set; } = null!;
 
     [InverseProperty("MaGheNavigation")]
     public virtual ICollection<Ve> Ves { get; set; } = new List<Ve>();

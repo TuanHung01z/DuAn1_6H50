@@ -16,6 +16,7 @@ public partial class DienVien
     [StringLength(30)]
     public string TenDienVien { get; set; } = null!;
 
+    [StringLength(150)]
     public string? MoTaDienVien { get; set; }
 
     [InverseProperty("MaDienVienNavigation")]

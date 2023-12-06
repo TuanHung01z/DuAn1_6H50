@@ -17,15 +17,14 @@ public partial class HoaDonChiTiet
     public string MaHoaDon { get; set; } = null!;
 
     [StringLength(10)]
-    public string MaVe { get; set; } = null!;
+    public string? MaVe { get; set; }
 
     [StringLength(10)]
     public string? MaDichVu { get; set; }
 
     public int? SoLuongVe { get; set; }
 
-    [Column(TypeName = "money")]
-    public decimal? TongTien { get; set; }
+    public int? TongTien { get; set; }
 
     [ForeignKey("MaDichVu")]
     [InverseProperty("HoaDonChiTiets")]
@@ -37,5 +36,5 @@ public partial class HoaDonChiTiet
 
     [ForeignKey("MaVe")]
     [InverseProperty("HoaDonChiTiets")]
-    public virtual Ve MaVeNavigation { get; set; } = null!;
+    public virtual Ve? MaVeNavigation { get; set; }
 }
