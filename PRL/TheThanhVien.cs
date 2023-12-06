@@ -116,8 +116,8 @@ namespace PRL
 #pragma warning disable
             Txt_Phone.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[0].Value.ToString().TrimEnd();
             Combo_Tier.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[2].Value.ToString();
-            Txt_Available.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[3].Value.ToString()).ToString("d/M/yyyy");
-            Txt_DieDate.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[4].Value.ToString()).ToString("d/M/yyyy");
+            Txt_Available.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[3].Value.ToString()).ToString("d/M/yyyy").Replace(", ", "/");
+            Txt_DieDate.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[4].Value.ToString()).ToString("d/M/yyyy").Replace(", ", "/");
 #pragma warning enable
             Txt_Points.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[1].Value.ToString();
         }
