@@ -46,34 +46,34 @@ public partial class DBContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source= DESKTOP-JEL1AQM\\MSSQLSERVER1 ;Initial Catalog= Moviet;Integrated Security=True;TrustServerCertificate=true");
+        => optionsBuilder.UseSqlServer("Data Source= DESKTOP-QM5ES3L\\HUNGTUAN;Initial Catalog=Moviet;Integrated Security=True;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<DaoDien>(entity =>
         {
-            entity.HasKey(e => e.MaDaoDien).HasName("PK__DaoDien__F57FCFF45482C8F0");
+            entity.HasKey(e => e.MaDaoDien).HasName("PK__DaoDien__F57FCFF450155B19");
 
             entity.Property(e => e.MaDaoDien).IsFixedLength();
         });
 
         modelBuilder.Entity<DichVu>(entity =>
         {
-            entity.HasKey(e => e.MaDichVu).HasName("PK__DichVu__C0E6DE8F7799A80E");
+            entity.HasKey(e => e.MaDichVu).HasName("PK__DichVu__C0E6DE8FAD4274D9");
 
             entity.Property(e => e.MaDichVu).IsFixedLength();
         });
 
         modelBuilder.Entity<DienVien>(entity =>
         {
-            entity.HasKey(e => e.MaDienVien).HasName("PK__DienVien__28BD9B0CD953425F");
+            entity.HasKey(e => e.MaDienVien).HasName("PK__DienVien__28BD9B0CC64B49F1");
 
             entity.Property(e => e.MaDienVien).IsFixedLength();
         });
 
         modelBuilder.Entity<Ghe>(entity =>
         {
-            entity.HasKey(e => e.MaGhe).HasName("PK__Ghe__3CD3C67B91CE5E3D");
+            entity.HasKey(e => e.MaGhe).HasName("PK__Ghe__3CD3C67BDC3F89EC");
 
             entity.Property(e => e.MaGhe).IsFixedLength();
             entity.Property(e => e.HangGhe).IsFixedLength();
@@ -86,22 +86,22 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<HoaDon>(entity =>
         {
-            entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__835ED13BC5D63D0C");
+            entity.HasKey(e => e.MaHoaDon).HasName("PK__HoaDon__835ED13B2688B27D");
 
             entity.Property(e => e.MaHoaDon).IsFixedLength();
-            entity.Property(e => e.MaKhachHang).IsFixedLength();
             entity.Property(e => e.MaVoucher).IsFixedLength();
-
-            entity.HasOne(d => d.MaKhachHangNavigation).WithMany(p => p.HoaDons)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__HoaDon__MaKhachH__2B3F6F97");
+            entity.Property(e => e.SdtkhachHang).IsFixedLength();
 
             entity.HasOne(d => d.MaVoucherNavigation).WithMany(p => p.HoaDons).HasConstraintName("FK__HoaDon__MaVouche__2A4B4B5E");
+
+            entity.HasOne(d => d.SdtkhachHangNavigation).WithMany(p => p.HoaDons)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__HoaDon__SDTKhach__2B3F6F97");
         });
 
         modelBuilder.Entity<HoaDonChiTiet>(entity =>
         {
-            entity.HasKey(e => e.MaHoaDonChiTiet).HasName("PK__HoaDonCh__6C2FD0CE7FE01491");
+            entity.HasKey(e => e.MaHoaDonChiTiet).HasName("PK__HoaDonCh__6C2FD0CED7A0E8AD");
 
             entity.Property(e => e.MaHoaDonChiTiet).IsFixedLength();
             entity.Property(e => e.MaDichVu).IsFixedLength();
@@ -121,15 +121,14 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<KhachHang>(entity =>
         {
-            entity.HasKey(e => e.MaKhachHang).HasName("PK__KhachHan__88D2F0E57619BCAF");
+            entity.HasKey(e => e.SdtkhachHang).HasName("PK__KhachHan__C87280B14D5761AC");
 
-            entity.Property(e => e.MaKhachHang).IsFixedLength();
             entity.Property(e => e.SdtkhachHang).IsFixedLength();
         });
 
         modelBuilder.Entity<LichChieu>(entity =>
         {
-            entity.HasKey(e => e.MaLichChieu).HasName("PK__LichChie__DC74019717C8168A");
+            entity.HasKey(e => e.MaLichChieu).HasName("PK__LichChie__DC7401975E9F53C0");
 
             entity.Property(e => e.MaLichChieu).IsFixedLength();
             entity.Property(e => e.MaPhim).IsFixedLength();
@@ -146,7 +145,7 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<Phim>(entity =>
         {
-            entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE324B56C15");
+            entity.HasKey(e => e.MaPhim).HasName("PK__Phim__4AC03DE3E17FBBC6");
 
             entity.Property(e => e.MaPhim).IsFixedLength();
             entity.Property(e => e.MaDaoDien).IsFixedLength();
@@ -169,28 +168,28 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<PhongChieu>(entity =>
         {
-            entity.HasKey(e => e.MaPhongChieu).HasName("PK__PhongChi__121FC6E2F5CE2161");
+            entity.HasKey(e => e.MaPhongChieu).HasName("PK__PhongChi__121FC6E271D7F7E0");
 
             entity.Property(e => e.MaPhongChieu).IsFixedLength();
         });
 
         modelBuilder.Entity<TheLoai>(entity =>
         {
-            entity.HasKey(e => e.MaTheLoai).HasName("PK__TheLoai__D73FF34A7D38C3E5");
+            entity.HasKey(e => e.MaTheLoai).HasName("PK__TheLoai__D73FF34AD4A54AEE");
 
             entity.Property(e => e.MaTheLoai).IsFixedLength();
         });
 
         modelBuilder.Entity<ThongKe>(entity =>
         {
-            entity.HasKey(e => e.MaThongKe).HasName("PK__ThongKe__60E521F4B16A78E3");
+            entity.HasKey(e => e.MaThongKe).HasName("PK__ThongKe__60E521F4CB644F6F");
 
             entity.Property(e => e.MaThongKe).IsFixedLength();
         });
 
         modelBuilder.Entity<Ve>(entity =>
         {
-            entity.HasKey(e => e.MaVe).HasName("PK__Ve__2725100F542B0E4E");
+            entity.HasKey(e => e.MaVe).HasName("PK__Ve__2725100FBE0C8F66");
 
             entity.Property(e => e.MaVe).IsFixedLength();
             entity.Property(e => e.MaGhe).IsFixedLength();
@@ -217,7 +216,7 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<Voucher>(entity =>
         {
-            entity.HasKey(e => e.MaVoucher).HasName("PK__Voucher__0AAC5B11DAD365D9");
+            entity.HasKey(e => e.MaVoucher).HasName("PK__Voucher__0AAC5B11CEFAEE36");
 
             entity.Property(e => e.MaVoucher).IsFixedLength();
         });

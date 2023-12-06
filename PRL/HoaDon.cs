@@ -30,7 +30,7 @@ namespace PRL
             TopMost = true,
             FormBorderStyle = FormBorderStyle.None
         };
-        KhachHang KH = new KhachHang()
+        KhachHang1 KH = new KhachHang1()
         {
             Dock = DockStyle.Fill,
             TopLevel = false,
@@ -621,7 +621,7 @@ namespace PRL
 
         private void Panel_KhachHang_Click(object sender, EventArgs e)
         {
-            KhachHang Kh = new KhachHang();
+            KhachHang1 Kh = new KhachHang1();
             Panel panel = Kh.khachHang();
             panel2.Controls.Clear();
             panel2.Controls.Add(panel);
