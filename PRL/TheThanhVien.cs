@@ -113,11 +113,12 @@ namespace PRL
             BTN_CreateNew.Enabled = false;
             BTN_Update.Enabled = true;
             BTN_Delete.Enabled = true;
-
-            Txt_Phone.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[0].Value.ToString();
+#pragma warning disable
+            Txt_Phone.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[0].Value.ToString().TrimEnd();
             Combo_Tier.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[2].Value.ToString();
-            Txt_Available.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[3].Value.ToString()).ToShortDateString();
-            Txt_DieDate.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[4].Value.ToString()).ToShortDateString();
+            Txt_Available.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[3].Value.ToString()).ToString("d/M/yyyy");
+            Txt_DieDate.Text = DateTime.Parse(Screen_MemberCard.Rows[Event.RowIndex].Cells[4].Value.ToString()).ToString("d/M/yyyy");
+#pragma warning enable
             Txt_Points.Text = Screen_MemberCard.Rows[Event.RowIndex].Cells[1].Value.ToString();
         }
 
