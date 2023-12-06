@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel_YeuCauDichVu = new Panel();
+            lb_TongGiaTien = new Label();
             textBox1 = new TextBox();
             btn_ThanhToan = new Button();
             label3 = new Label();
             dtg_ChonDV = new DataGridView();
             dtg_HienThiDSDV = new DataGridView();
-            lb_TongGiaTien = new Label();
             panel_YeuCauDichVu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtg_ChonDV).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dtg_HienThiDSDV).BeginInit();
@@ -53,12 +53,26 @@
             panel_YeuCauDichVu.Size = new Size(923, 940);
             panel_YeuCauDichVu.TabIndex = 1;
             // 
+            // lb_TongGiaTien
+            // 
+            lb_TongGiaTien.AutoSize = true;
+            lb_TongGiaTien.BackColor = Color.FromArgb(255, 188, 18);
+            lb_TongGiaTien.Font = new Font("Segoe UI", 19F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_TongGiaTien.ForeColor = Color.Black;
+            lb_TongGiaTien.Location = new Point(609, 607);
+            lb_TongGiaTien.Name = "lb_TongGiaTien";
+            lb_TongGiaTien.RightToLeft = RightToLeft.Yes;
+            lb_TongGiaTien.Size = new Size(37, 45);
+            lb_TongGiaTien.TabIndex = 54;
+            lb_TongGiaTien.Text = "0";
+            lb_TongGiaTien.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.FromArgb(255, 188, 18);
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(20, 608);
+            textBox1.Location = new Point(19, 607);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(890, 46);
@@ -89,6 +103,7 @@
             // 
             // dtg_ChonDV
             // 
+            dtg_ChonDV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtg_ChonDV.BackgroundColor = Color.White;
             dtg_ChonDV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtg_ChonDV.Location = new Point(19, 389);
@@ -97,9 +112,11 @@
             dtg_ChonDV.RowTemplate.Height = 29;
             dtg_ChonDV.Size = new Size(890, 200);
             dtg_ChonDV.TabIndex = 0;
+            dtg_ChonDV.CellValueChanged += dtg_ChonDV_CellValueChanged;
             // 
             // dtg_HienThiDSDV
             // 
+            dtg_HienThiDSDV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtg_HienThiDSDV.BackgroundColor = Color.White;
             dtg_HienThiDSDV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtg_HienThiDSDV.Location = new Point(20, 67);
@@ -108,18 +125,7 @@
             dtg_HienThiDSDV.RowTemplate.Height = 29;
             dtg_HienThiDSDV.Size = new Size(889, 306);
             dtg_HienThiDSDV.TabIndex = 0;
-            // 
-            // lb_TongGiaTien
-            // 
-            lb_TongGiaTien.AutoSize = true;
-            lb_TongGiaTien.BackColor = Color.FromArgb(255, 188, 18);
-            lb_TongGiaTien.Font = new Font("Segoe UI", 19F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_TongGiaTien.ForeColor = Color.Black;
-            lb_TongGiaTien.Location = new Point(809, 609);
-            lb_TongGiaTien.Name = "lb_TongGiaTien";
-            lb_TongGiaTien.Size = new Size(37, 45);
-            lb_TongGiaTien.TabIndex = 54;
-            lb_TongGiaTien.Text = "0";
+            dtg_HienThiDSDV.CellClick += dtg_HienThiDSDV_CellClick;
             // 
             // YeuCauDichVu
             // 
