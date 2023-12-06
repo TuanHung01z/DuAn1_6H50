@@ -148,9 +148,8 @@
             Panel_Phim.Controls.Add(panel1);
             Panel_Phim.Controls.Add(label3);
             Panel_Phim.Location = new Point(1, 0);
-            Panel_Phim.Margin = new Padding(4);
             Panel_Phim.Name = "Panel_Phim";
-            Panel_Phim.Size = new Size(1169, 1845);
+            Panel_Phim.Size = new Size(935, 1476);
             Panel_Phim.TabIndex = 1;
             // 
             // panel10
@@ -158,10 +157,9 @@
             panel10.Controls.Add(label29);
             panel10.Controls.Add(label30);
             panel10.Controls.Add(label31);
-            panel10.Location = new Point(819, 1708);
-            panel10.Margin = new Padding(4);
+            panel10.Location = new Point(655, 1366);
             panel10.Name = "panel10";
-            panel10.Size = new Size(281, 110);
+            panel10.Size = new Size(225, 88);
             panel10.TabIndex = 76;
             // 
             // label29
@@ -169,10 +167,9 @@
             label29.AutoSize = true;
             label29.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label29.ForeColor = Color.White;
-            label29.Location = new Point(14, 80);
-            label29.Margin = new Padding(4, 0, 4, 0);
+            label29.Location = new Point(11, 64);
             label29.Name = "label29";
-            label29.Size = new Size(242, 25);
+            label29.Size = new Size(198, 20);
             label29.TabIndex = 50;
             label29.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -181,10 +178,9 @@
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label30.ForeColor = Color.White;
-            label30.Location = new Point(14, 0);
-            label30.Margin = new Padding(4, 0, 4, 0);
+            label30.Location = new Point(11, 0);
             label30.Name = "label30";
-            label30.Size = new Size(210, 25);
+            label30.Size = new Size(176, 20);
             label30.TabIndex = 50;
             label30.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -193,10 +189,9 @@
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label31.ForeColor = Color.White;
-            label31.Location = new Point(14, 40);
-            label31.Margin = new Padding(4, 0, 4, 0);
+            label31.Location = new Point(11, 32);
             label31.Name = "label31";
-            label31.Size = new Size(179, 25);
+            label31.Size = new Size(146, 20);
             label31.TabIndex = 50;
             label31.Text = "Thời lượng: 110 phút";
             // 
@@ -205,10 +200,9 @@
             panel4.Controls.Add(label11);
             panel4.Controls.Add(label12);
             panel4.Controls.Add(label13);
-            panel4.Location = new Point(819, 1258);
-            panel4.Margin = new Padding(4);
+            panel4.Location = new Point(655, 1006);
             panel4.Name = "panel4";
-            panel4.Size = new Size(281, 110);
+            panel4.Size = new Size(225, 88);
             panel4.TabIndex = 70;
             // 
             // label11
@@ -216,10 +210,9 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(14, 80);
-            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Location = new Point(11, 64);
             label11.Name = "label11";
-            label11.Size = new Size(242, 25);
+            label11.Size = new Size(198, 20);
             label11.TabIndex = 50;
             label11.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -228,10 +221,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(14, 0);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Location = new Point(11, 0);
             label12.Name = "label12";
-            label12.Size = new Size(210, 25);
+            label12.Size = new Size(176, 20);
             label12.TabIndex = 50;
             label12.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -240,10 +232,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(14, 40);
-            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Location = new Point(11, 32);
             label13.Name = "label13";
-            label13.Size = new Size(179, 25);
+            label13.Size = new Size(146, 20);
             label13.TabIndex = 50;
             label13.Text = "Thời lượng: 110 phút";
             // 
@@ -252,10 +243,9 @@
             panel5.Controls.Add(label14);
             panel5.Controls.Add(label15);
             panel5.Controls.Add(label16);
-            panel5.Location = new Point(439, 1258);
-            panel5.Margin = new Padding(4);
+            panel5.Location = new Point(351, 1006);
             panel5.Name = "panel5";
-            panel5.Size = new Size(281, 110);
+            panel5.Size = new Size(225, 88);
             panel5.TabIndex = 71;
             // 
             // label14
@@ -263,10 +253,9 @@
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(14, 80);
-            label14.Margin = new Padding(4, 0, 4, 0);
+            label14.Location = new Point(11, 64);
             label14.Name = "label14";
-            label14.Size = new Size(242, 25);
+            label14.Size = new Size(198, 20);
             label14.TabIndex = 50;
             label14.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -275,10 +264,9 @@
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(14, 0);
-            label15.Margin = new Padding(4, 0, 4, 0);
+            label15.Location = new Point(11, 0);
             label15.Name = "label15";
-            label15.Size = new Size(206, 25);
+            label15.Size = new Size(172, 20);
             label15.TabIndex = 50;
             label15.Text = "Thể loại: Hồi hộp, Tâm lý";
             // 
@@ -287,10 +275,9 @@
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(14, 40);
-            label16.Margin = new Padding(4, 0, 4, 0);
+            label16.Location = new Point(11, 32);
             label16.Name = "label16";
-            label16.Size = new Size(179, 25);
+            label16.Size = new Size(146, 20);
             label16.TabIndex = 50;
             label16.Text = "Thời lượng: 120 phút";
             // 
@@ -299,10 +286,9 @@
             panel11.Controls.Add(label32);
             panel11.Controls.Add(label33);
             panel11.Controls.Add(label34);
-            panel11.Location = new Point(439, 1708);
-            panel11.Margin = new Padding(4);
+            panel11.Location = new Point(351, 1366);
             panel11.Name = "panel11";
-            panel11.Size = new Size(281, 110);
+            panel11.Size = new Size(225, 88);
             panel11.TabIndex = 77;
             // 
             // label32
@@ -310,10 +296,9 @@
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label32.ForeColor = Color.White;
-            label32.Location = new Point(14, 80);
-            label32.Margin = new Padding(4, 0, 4, 0);
+            label32.Location = new Point(11, 64);
             label32.Name = "label32";
-            label32.Size = new Size(242, 25);
+            label32.Size = new Size(198, 20);
             label32.TabIndex = 50;
             label32.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -322,10 +307,9 @@
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label33.ForeColor = Color.White;
-            label33.Location = new Point(14, 0);
-            label33.Margin = new Padding(4, 0, 4, 0);
+            label33.Location = new Point(11, 0);
             label33.Name = "label33";
-            label33.Size = new Size(206, 25);
+            label33.Size = new Size(172, 20);
             label33.TabIndex = 50;
             label33.Text = "Thể loại: Hồi hộp, Tâm lý";
             // 
@@ -334,10 +318,9 @@
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label34.ForeColor = Color.White;
-            label34.Location = new Point(14, 40);
-            label34.Margin = new Padding(4, 0, 4, 0);
+            label34.Location = new Point(11, 32);
             label34.Name = "label34";
-            label34.Size = new Size(179, 25);
+            label34.Size = new Size(146, 20);
             label34.TabIndex = 50;
             label34.Text = "Thời lượng: 120 phút";
             // 
@@ -346,10 +329,9 @@
             panel12.Controls.Add(label35);
             panel12.Controls.Add(label36);
             panel12.Controls.Add(label37);
-            panel12.Location = new Point(68, 1708);
-            panel12.Margin = new Padding(4);
+            panel12.Location = new Point(54, 1366);
             panel12.Name = "panel12";
-            panel12.Size = new Size(298, 120);
+            panel12.Size = new Size(238, 96);
             panel12.TabIndex = 78;
             // 
             // label35
@@ -357,10 +339,9 @@
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label35.ForeColor = Color.White;
-            label35.Location = new Point(14, 80);
-            label35.Margin = new Padding(4, 0, 4, 0);
+            label35.Location = new Point(11, 64);
             label35.Name = "label35";
-            label35.Size = new Size(242, 25);
+            label35.Size = new Size(198, 20);
             label35.TabIndex = 50;
             label35.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -369,10 +350,9 @@
             label36.AutoSize = true;
             label36.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label36.ForeColor = Color.White;
-            label36.Location = new Point(14, 0);
-            label36.Margin = new Padding(4, 0, 4, 0);
+            label36.Location = new Point(11, 0);
             label36.Name = "label36";
-            label36.Size = new Size(210, 25);
+            label36.Size = new Size(176, 20);
             label36.TabIndex = 50;
             label36.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -381,10 +361,9 @@
             label37.AutoSize = true;
             label37.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label37.ForeColor = Color.White;
-            label37.Location = new Point(14, 40);
-            label37.Margin = new Padding(4, 0, 4, 0);
+            label37.Location = new Point(11, 32);
             label37.Name = "label37";
-            label37.Size = new Size(179, 25);
+            label37.Size = new Size(146, 20);
             label37.TabIndex = 50;
             label37.Text = "Thời lượng: 113 phút";
             // 
@@ -393,10 +372,9 @@
             panel6.Controls.Add(label17);
             panel6.Controls.Add(label18);
             panel6.Controls.Add(label19);
-            panel6.Location = new Point(68, 1258);
-            panel6.Margin = new Padding(4);
+            panel6.Location = new Point(54, 1006);
             panel6.Name = "panel6";
-            panel6.Size = new Size(298, 120);
+            panel6.Size = new Size(238, 96);
             panel6.TabIndex = 72;
             // 
             // label17
@@ -404,10 +382,9 @@
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(14, 80);
-            label17.Margin = new Padding(4, 0, 4, 0);
+            label17.Location = new Point(11, 64);
             label17.Name = "label17";
-            label17.Size = new Size(242, 25);
+            label17.Size = new Size(198, 20);
             label17.TabIndex = 50;
             label17.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -416,10 +393,9 @@
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(14, 0);
-            label18.Margin = new Padding(4, 0, 4, 0);
+            label18.Location = new Point(11, 0);
             label18.Name = "label18";
-            label18.Size = new Size(210, 25);
+            label18.Size = new Size(176, 20);
             label18.TabIndex = 50;
             label18.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -428,20 +404,18 @@
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label19.ForeColor = Color.White;
-            label19.Location = new Point(14, 40);
-            label19.Margin = new Padding(4, 0, 4, 0);
+            label19.Location = new Point(11, 32);
             label19.Name = "label19";
-            label19.Size = new Size(179, 25);
+            label19.Size = new Size(146, 20);
             label19.TabIndex = 50;
             label19.Text = "Thời lượng: 113 phút";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(819, 986);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(655, 789);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(210, 253);
+            pictureBox1.Size = new Size(168, 202);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 67;
             pictureBox1.TabStop = false;
@@ -449,10 +423,9 @@
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(819, 1436);
-            pictureBox10.Margin = new Padding(4);
+            pictureBox10.Location = new Point(655, 1149);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(210, 253);
+            pictureBox10.Size = new Size(168, 202);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 73;
             pictureBox10.TabStop = false;
@@ -460,10 +433,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(439, 986);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Location = new Point(351, 789);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(210, 253);
+            pictureBox2.Size = new Size(168, 202);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 68;
             pictureBox2.TabStop = false;
@@ -471,10 +443,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(68, 986);
-            pictureBox9.Margin = new Padding(4);
+            pictureBox9.Location = new Point(54, 789);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(210, 253);
+            pictureBox9.Size = new Size(168, 202);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 69;
             pictureBox9.TabStop = false;
@@ -482,10 +453,9 @@
             // pictureBox11
             // 
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(439, 1436);
-            pictureBox11.Margin = new Padding(4);
+            pictureBox11.Location = new Point(351, 1149);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(210, 253);
+            pictureBox11.Size = new Size(168, 202);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 74;
             pictureBox11.TabStop = false;
@@ -495,10 +465,9 @@
             panel7.Controls.Add(label20);
             panel7.Controls.Add(label21);
             panel7.Controls.Add(label22);
-            panel7.Location = new Point(819, 803);
-            panel7.Margin = new Padding(4);
+            panel7.Location = new Point(666, 606);
             panel7.Name = "panel7";
-            panel7.Size = new Size(281, 110);
+            panel7.Size = new Size(225, 88);
             panel7.TabIndex = 64;
             // 
             // label20
@@ -506,10 +475,9 @@
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label20.ForeColor = Color.White;
-            label20.Location = new Point(14, 80);
-            label20.Margin = new Padding(4, 0, 4, 0);
+            label20.Location = new Point(11, 64);
             label20.Name = "label20";
-            label20.Size = new Size(242, 25);
+            label20.Size = new Size(198, 20);
             label20.TabIndex = 50;
             label20.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -518,10 +486,9 @@
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label21.ForeColor = Color.White;
-            label21.Location = new Point(14, 0);
-            label21.Margin = new Padding(4, 0, 4, 0);
+            label21.Location = new Point(11, 0);
             label21.Name = "label21";
-            label21.Size = new Size(210, 25);
+            label21.Size = new Size(176, 20);
             label21.TabIndex = 50;
             label21.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -530,20 +497,18 @@
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(14, 40);
-            label22.Margin = new Padding(4, 0, 4, 0);
+            label22.Location = new Point(11, 32);
             label22.Name = "label22";
-            label22.Size = new Size(179, 25);
+            label22.Size = new Size(146, 20);
             label22.TabIndex = 50;
             label22.Text = "Thời lượng: 110 phút";
             // 
             // pictureBox12
             // 
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(68, 1436);
-            pictureBox12.Margin = new Padding(4);
+            pictureBox12.Location = new Point(54, 1149);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(210, 253);
+            pictureBox12.Size = new Size(168, 202);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 75;
             pictureBox12.TabStop = false;
@@ -553,10 +518,9 @@
             panel8.Controls.Add(label23);
             panel8.Controls.Add(label24);
             panel8.Controls.Add(label25);
-            panel8.Location = new Point(439, 803);
-            panel8.Margin = new Padding(4);
+            panel8.Location = new Point(362, 606);
             panel8.Name = "panel8";
-            panel8.Size = new Size(281, 110);
+            panel8.Size = new Size(225, 88);
             panel8.TabIndex = 65;
             // 
             // label23
@@ -564,10 +528,9 @@
             label23.AutoSize = true;
             label23.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label23.ForeColor = Color.White;
-            label23.Location = new Point(14, 80);
-            label23.Margin = new Padding(4, 0, 4, 0);
+            label23.Location = new Point(11, 64);
             label23.Name = "label23";
-            label23.Size = new Size(242, 25);
+            label23.Size = new Size(198, 20);
             label23.TabIndex = 50;
             label23.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -576,10 +539,9 @@
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label24.ForeColor = Color.White;
-            label24.Location = new Point(14, 0);
-            label24.Margin = new Padding(4, 0, 4, 0);
+            label24.Location = new Point(11, 0);
             label24.Name = "label24";
-            label24.Size = new Size(206, 25);
+            label24.Size = new Size(172, 20);
             label24.TabIndex = 50;
             label24.Text = "Thể loại: Hồi hộp, Tâm lý";
             // 
@@ -588,10 +550,9 @@
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(14, 40);
-            label25.Margin = new Padding(4, 0, 4, 0);
+            label25.Location = new Point(11, 32);
             label25.Name = "label25";
-            label25.Size = new Size(179, 25);
+            label25.Size = new Size(146, 20);
             label25.TabIndex = 50;
             label25.Text = "Thời lượng: 120 phút";
             // 
@@ -600,10 +561,9 @@
             panel9.Controls.Add(label26);
             panel9.Controls.Add(label27);
             panel9.Controls.Add(label28);
-            panel9.Location = new Point(68, 803);
-            panel9.Margin = new Padding(4);
+            panel9.Location = new Point(65, 606);
             panel9.Name = "panel9";
-            panel9.Size = new Size(298, 120);
+            panel9.Size = new Size(238, 96);
             panel9.TabIndex = 66;
             // 
             // label26
@@ -611,10 +571,9 @@
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label26.ForeColor = Color.White;
-            label26.Location = new Point(14, 80);
-            label26.Margin = new Padding(4, 0, 4, 0);
+            label26.Location = new Point(11, 64);
             label26.Name = "label26";
-            label26.Size = new Size(242, 25);
+            label26.Size = new Size(198, 20);
             label26.TabIndex = 50;
             label26.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -623,10 +582,9 @@
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label27.ForeColor = Color.White;
-            label27.Location = new Point(14, 0);
-            label27.Margin = new Padding(4, 0, 4, 0);
+            label27.Location = new Point(11, 0);
             label27.Name = "label27";
-            label27.Size = new Size(210, 25);
+            label27.Size = new Size(176, 20);
             label27.TabIndex = 50;
             label27.Text = "Thể loại: Hồi hộp, Kinh dị";
             // 
@@ -635,20 +593,18 @@
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label28.ForeColor = Color.White;
-            label28.Location = new Point(14, 40);
-            label28.Margin = new Padding(4, 0, 4, 0);
+            label28.Location = new Point(11, 32);
             label28.Name = "label28";
-            label28.Size = new Size(179, 25);
+            label28.Size = new Size(146, 20);
             label28.TabIndex = 50;
             label28.Text = "Thời lượng: 113 phút";
             // 
             // pictureBox8
             // 
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(68, 80);
-            pictureBox8.Margin = new Padding(4);
+            pictureBox8.Location = new Point(65, 47);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(210, 253);
+            pictureBox8.Size = new Size(168, 202);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 63;
             pictureBox8.TabStop = false;
@@ -656,10 +612,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(819, 531);
-            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Location = new Point(666, 389);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(210, 253);
+            pictureBox7.Size = new Size(168, 202);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 62;
             pictureBox7.TabStop = false;
@@ -667,10 +622,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(819, 80);
-            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Location = new Point(666, 47);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(210, 253);
+            pictureBox4.Size = new Size(168, 202);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 62;
             pictureBox4.TabStop = false;
@@ -680,10 +634,9 @@
             panel3.Controls.Add(label8);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(label10);
-            panel3.Location = new Point(819, 360);
-            panel3.Margin = new Padding(4);
+            panel3.Location = new Point(666, 271);
             panel3.Name = "panel3";
-            panel3.Size = new Size(281, 110);
+            panel3.Size = new Size(225, 88);
             panel3.TabIndex = 61;
             // 
             // label8
@@ -691,10 +644,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(14, 80);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Location = new Point(11, 64);
             label8.Name = "label8";
-            label8.Size = new Size(196, 25);
+            label8.Size = new Size(161, 20);
             label8.TabIndex = 50;
             label8.Text = "Khởi chiếu: 17-11-2023";
             // 
@@ -703,10 +655,9 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(14, 0);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(11, 0);
             label9.Name = "label9";
-            label9.Size = new Size(135, 25);
+            label9.Size = new Size(113, 20);
             label9.TabIndex = 50;
             label9.Text = "Thể loại: Tâm Lý";
             // 
@@ -715,20 +666,18 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(14, 40);
-            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Location = new Point(11, 32);
             label10.Name = "label10";
-            label10.Size = new Size(179, 25);
+            label10.Size = new Size(146, 20);
             label10.TabIndex = 50;
             label10.Text = "Thời lượng: 123 phút";
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(439, 531);
-            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Location = new Point(362, 389);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(210, 253);
+            pictureBox6.Size = new Size(168, 202);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 62;
             pictureBox6.TabStop = false;
@@ -736,10 +685,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(439, 80);
-            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Location = new Point(362, 47);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(210, 253);
+            pictureBox3.Size = new Size(168, 202);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 62;
             pictureBox3.TabStop = false;
@@ -749,10 +697,9 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label7);
-            panel2.Location = new Point(439, 360);
-            panel2.Margin = new Padding(4);
+            panel2.Location = new Point(362, 271);
             panel2.Name = "panel2";
-            panel2.Size = new Size(281, 110);
+            panel2.Size = new Size(225, 88);
             panel2.TabIndex = 61;
             // 
             // label1
@@ -760,10 +707,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(14, 80);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(11, 64);
             label1.Name = "label1";
-            label1.Size = new Size(196, 25);
+            label1.Size = new Size(161, 20);
             label1.TabIndex = 50;
             label1.Text = "Khởi chiếu: 20-10-2023";
             // 
@@ -772,10 +718,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(14, 0);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(11, 0);
             label6.Name = "label6";
-            label6.Size = new Size(233, 25);
+            label6.Size = new Size(195, 20);
             label6.TabIndex = 50;
             label6.Text = "Thể loại: Gia đình, Phiêu Lưu";
             // 
@@ -784,20 +729,18 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(14, 40);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(11, 32);
             label7.Name = "label7";
-            label7.Size = new Size(179, 25);
+            label7.Size = new Size(146, 20);
             label7.TabIndex = 50;
             label7.Text = "Thời lượng: 110 phút";
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(68, 531);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(65, 389);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(210, 253);
+            pictureBox5.Size = new Size(168, 202);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 62;
             pictureBox5.TabStop = false;
@@ -807,10 +750,9 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label4);
-            panel1.Location = new Point(68, 360);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(65, 271);
             panel1.Name = "panel1";
-            panel1.Size = new Size(298, 120);
+            panel1.Size = new Size(238, 96);
             panel1.TabIndex = 61;
             // 
             // label5
@@ -818,10 +760,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(14, 80);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(11, 64);
             label5.Name = "label5";
-            label5.Size = new Size(242, 25);
+            label5.Size = new Size(198, 20);
             label5.TabIndex = 50;
             label5.Text = "Ngày khởi chiếu: 24-11-2023";
             // 
@@ -830,10 +771,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 0);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(11, 0);
             label2.Name = "label2";
-            label2.Size = new Size(206, 25);
+            label2.Size = new Size(172, 20);
             label2.TabIndex = 50;
             label2.Text = "Thể loại: Hồi hộp, Tâm lý";
             // 
@@ -842,10 +782,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(14, 40);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(11, 32);
             label4.Name = "label4";
-            label4.Size = new Size(179, 25);
+            label4.Size = new Size(146, 20);
             label4.TabIndex = 50;
             label4.Text = "Thời lượng: 113 phút";
             // 
@@ -854,21 +793,21 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(29, 18);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(23, 9);
             label3.Name = "label3";
-            label3.Size = new Size(80, 38);
+            label3.Size = new Size(68, 32);
             label3.TabIndex = 50;
             label3.Text = "Phim";
             // 
             // Phim
             // 
             AllowDrop = true;
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(190, 0, 0);
-            ClientSize = new Size(1171, 892);
+            ClientSize = new Size(937, 714);
             Controls.Add(Panel_Phim);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Phim";
             Text = "Phim";
             Panel_Phim.ResumeLayout(false);
