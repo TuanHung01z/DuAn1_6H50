@@ -24,11 +24,11 @@ namespace PRL
         {
             if (txtTK.Text.Length == 0 && txtMK.Text.Length == 0)
             {
-                MessageBox.Show("Tài khoản và mật khẩu không được bỏ trống!","Cảnh báo");
+                MessageBox.Show("Tài khoản và mật khẩu không được bỏ trống!", "Cảnh báo");
             }
             else if (txtTK.Text.Length == 0)
             {
-                MessageBox.Show("Tài khoản không được bỏ trống!","Cảnh báo");
+                MessageBox.Show("Tài khoản không được bỏ trống!", "Cảnh báo");
             }
             else if (txtMK.Text.Length == 0)
             {

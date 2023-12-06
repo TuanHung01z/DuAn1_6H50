@@ -16,8 +16,8 @@ public partial class Voucher
     [StringLength(100)]
     public string LoaiVoucher { get; set; } = null!;
 
-    [Column(TypeName = "money")]
-    public decimal? GiaTri { get; set; }
+    [Column(TypeName = "int")]
+    public int? GiaTri { get; set; }
 
     [Column(TypeName = "datetime")]
     public DateTime? HanSuDung { get; set; }
