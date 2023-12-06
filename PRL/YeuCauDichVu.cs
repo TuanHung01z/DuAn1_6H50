@@ -149,9 +149,7 @@ namespace PRL
                     dtg_ChonDV.Rows[e.RowIndex].Cells["giadv"].Value = giaBan;
                     lb_TongGiaTien.Text = giaBan.ToString();
                 }
-            }
-
-            
+            }            
             else return;
         }
     }
