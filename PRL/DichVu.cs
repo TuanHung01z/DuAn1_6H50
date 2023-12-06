@@ -50,6 +50,12 @@ namespace PRL
         private void GetServiceList()
         {
             Screen_Svc.DataSource = Svc_DichVu.TaiDuLieu();
+            for (int i = 0; i < 3; i++)
+            {
+                Screen_Svc.Columns[i].MinimumWidth = 190;
+            }
+            Screen_Svc.Columns[3].MinimumWidth = 192;
+
             Screen_Svc.Columns[0].HeaderText = "Mã dịch vụ";
             Screen_Svc.Columns[1].HeaderText = "Mô tả dịch vụ";
             Screen_Svc.Columns[2].HeaderText = "Giá";

@@ -275,12 +275,12 @@
             // 
             Screen_Svc.BackgroundColor = Color.White;
             Screen_Svc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Screen_Svc.Location = new Point(6, 52);
+            Screen_Svc.Location = new Point(3, 48);
             Screen_Svc.Margin = new Padding(3, 2, 3, 2);
             Screen_Svc.Name = "Screen_Svc";
             Screen_Svc.RowHeadersWidth = 51;
             Screen_Svc.RowTemplate.Height = 29;
-            Screen_Svc.Size = new Size(808, 348);
+            Screen_Svc.Size = new Size(815, 348);
             Screen_Svc.TabIndex = 109;
             // 
             // DichVu
