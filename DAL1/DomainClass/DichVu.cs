@@ -16,8 +16,8 @@ public partial class DichVu
     [StringLength(70)]
     public string TenDichVu { get; set; } = null!;
 
-    [Column(TypeName = "money")]
-    public decimal GiaDichVu { get; set; }
+    [Column(TypeName = "int")]
+    public int GiaDichVu { get; set; }
 
     [StringLength(70)]
     public string TrangThaiDichVu { get; set; } = null!;
