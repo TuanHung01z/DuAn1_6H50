@@ -89,6 +89,7 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FlatStyle = FlatStyle.Flat;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Tiềm năng", "Đồng", "Bạc", "Vàng", "Kim cương", "Bạch kim" });
             comboBox1.Location = new Point(273, 456);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(247, 24);
@@ -273,11 +274,11 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(198, 414);
+            label7.Location = new Point(115, 416);
             label7.Name = "label7";
-            label7.Size = new Size(69, 25);
+            label7.Size = new Size(156, 25);
             label7.TabIndex = 84;
-            label7.Text = "Mã TK:";
+            label7.Text = "SĐT Khách Hàng:";
             // 
             // label3
             // 
