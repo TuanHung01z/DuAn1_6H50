@@ -10,14 +10,13 @@ namespace DAL1.DomainClass;
 public partial class KhachHang
 {
     [Key]
-    [StringLength(10)]
-    public string MaKhachHang { get; set; } = null!;
-
     [Column("SDTKhachHang")]
     [StringLength(20)]
     public string SdtkhachHang { get; set; } = null!;
 
-    [StringLength(255)]
+    [StringLength(100)]
+    public string TenKhachHang { get; set; } = null!;
+
     public string? DiaChi { get; set; }
 
     public int? TichDiem { get; set; }
@@ -25,6 +24,6 @@ public partial class KhachHang
     [StringLength(50)]
     public string? HangKhachHang { get; set; }
 
-    [InverseProperty("MaKhachHangNavigation")]
+    [InverseProperty("SdtkhachHangNavigation")]
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 }
