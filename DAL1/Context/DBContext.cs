@@ -184,12 +184,12 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<TheThanhVien>(entity =>
         {
-            entity.HasKey(e => e.SDTKhachHang).HasName("PK__GAHHHHHHH");
+            entity.HasKey(e => e.SDTKhachHang).HasName("PK__TheThanh__C87280B15126FF27");
             entity.Property(e => e.SDTKhachHang).IsFixedLength();
 
-            entity.HasOne(d => d.SDTKhachHangNavigation).WithMany(p => p.TheThanhViens)
+            entity.HasOne(d => d.SDTKhachHangNavigation_TTV).WithMany(p => p.TheThanhViens)
                   .OnDelete(DeleteBehavior.ClientSetNull)
-                  .HasConstraintName("FK_fjsklfasjdkljdsklf");
+                  .HasConstraintName("FK__TheThanhV__SDTKh__5EBF139D");
         });
 
         modelBuilder.Entity<ThongKe>(entity =>

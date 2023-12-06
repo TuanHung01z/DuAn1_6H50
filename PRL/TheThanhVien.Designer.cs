@@ -30,13 +30,13 @@
         {
             Panel_TheTv = new Panel();
             label2 = new Label();
-            textBox1 = new TextBox();
+            Txt_Points = new TextBox();
             pictureBox2 = new PictureBox();
-            comboBox1 = new ComboBox();
+            Combo_Tier = new ComboBox();
             BTN_Reset = new Button();
-            textBox5 = new TextBox();
+            Txt_DieDate = new TextBox();
             pictureBox3 = new PictureBox();
-            textBox7 = new TextBox();
+            Txt_Available = new TextBox();
             pictureBox4 = new PictureBox();
             Txt_Phone = new TextBox();
             pictureBox1 = new PictureBox();
@@ -60,13 +60,13 @@
             // Panel_TheTv
             // 
             Panel_TheTv.Controls.Add(label2);
-            Panel_TheTv.Controls.Add(textBox1);
+            Panel_TheTv.Controls.Add(Txt_Points);
             Panel_TheTv.Controls.Add(pictureBox2);
-            Panel_TheTv.Controls.Add(comboBox1);
+            Panel_TheTv.Controls.Add(Combo_Tier);
             Panel_TheTv.Controls.Add(BTN_Reset);
-            Panel_TheTv.Controls.Add(textBox5);
+            Panel_TheTv.Controls.Add(Txt_DieDate);
             Panel_TheTv.Controls.Add(pictureBox3);
-            Panel_TheTv.Controls.Add(textBox7);
+            Panel_TheTv.Controls.Add(Txt_Available);
             Panel_TheTv.Controls.Add(pictureBox4);
             Panel_TheTv.Controls.Add(Txt_Phone);
             Panel_TheTv.Controls.Add(pictureBox1);
@@ -95,16 +95,16 @@
             label2.TabIndex = 102;
             label2.Text = "Điểm:";
             // 
-            // textBox1
+            // Txt_Points
             // 
-            textBox1.BackColor = Color.FromArgb(255, 138, 0);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Black;
-            textBox1.Location = new Point(290, 538);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(239, 22);
-            textBox1.TabIndex = 5;
+            Txt_Points.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_Points.BorderStyle = BorderStyle.None;
+            Txt_Points.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_Points.ForeColor = Color.Black;
+            Txt_Points.Location = new Point(290, 538);
+            Txt_Points.Name = "Txt_Points";
+            Txt_Points.Size = new Size(239, 22);
+            Txt_Points.TabIndex = 5;
             // 
             // pictureBox2
             // 
@@ -117,18 +117,18 @@
             pictureBox2.TabIndex = 100;
             pictureBox2.TabStop = false;
             // 
-            // comboBox1
+            // Combo_Tier
             // 
-            comboBox1.BackColor = Color.FromArgb(255, 138, 0);
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.ForeColor = SystemColors.Control;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Tiềm năng", "Đồng", "Bạc", "Vàng", "Kim cương", "Bạch kim" });
-            comboBox1.Location = new Point(286, 449);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(247, 24);
-            comboBox1.TabIndex = 2;
+            Combo_Tier.BackColor = Color.FromArgb(255, 138, 0);
+            Combo_Tier.DropDownStyle = ComboBoxStyle.DropDownList;
+            Combo_Tier.FlatStyle = FlatStyle.Flat;
+            Combo_Tier.ForeColor = SystemColors.Control;
+            Combo_Tier.FormattingEnabled = true;
+            Combo_Tier.Items.AddRange(new object[] { "Tiềm năng", "Đồng", "Bạc", "Vàng", "Kim cương", "Bạch kim" });
+            Combo_Tier.Location = new Point(286, 449);
+            Combo_Tier.Name = "Combo_Tier";
+            Combo_Tier.Size = new Size(247, 24);
+            Combo_Tier.TabIndex = 2;
             // 
             // BTN_Reset
             // 
@@ -142,16 +142,17 @@
             BTN_Reset.Text = "Đặt lại";
             BTN_Reset.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // Txt_DieDate
             // 
-            textBox5.BackColor = Color.FromArgb(255, 138, 0);
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.ForeColor = Color.Black;
-            textBox5.Location = new Point(290, 509);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(239, 22);
-            textBox5.TabIndex = 4;
+            Txt_DieDate.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_DieDate.BorderStyle = BorderStyle.None;
+            Txt_DieDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_DieDate.ForeColor = Color.Black;
+            Txt_DieDate.Location = new Point(290, 509);
+            Txt_DieDate.Name = "Txt_DieDate";
+            Txt_DieDate.Size = new Size(239, 22);
+            Txt_DieDate.TabIndex = 4;
+            Txt_DieDate.KeyPress += Txt_DieDate_KeyPress;
             // 
             // pictureBox3
             // 
@@ -164,16 +165,17 @@
             pictureBox3.TabIndex = 95;
             pictureBox3.TabStop = false;
             // 
-            // textBox7
+            // Txt_Available
             // 
-            textBox7.BackColor = Color.FromArgb(255, 138, 0);
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox7.ForeColor = Color.Black;
-            textBox7.Location = new Point(290, 479);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(239, 22);
-            textBox7.TabIndex = 3;
+            Txt_Available.BackColor = Color.FromArgb(255, 138, 0);
+            Txt_Available.BorderStyle = BorderStyle.None;
+            Txt_Available.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Txt_Available.ForeColor = Color.Black;
+            Txt_Available.Location = new Point(290, 479);
+            Txt_Available.Name = "Txt_Available";
+            Txt_Available.Size = new Size(239, 22);
+            Txt_Available.TabIndex = 3;
+            Txt_Available.KeyPress += Txt_Available_KeyPress;
             // 
             // pictureBox4
             // 
@@ -232,6 +234,7 @@
             BTN_Delete.TabIndex = 8;
             BTN_Delete.Text = "Xóa";
             BTN_Delete.UseVisualStyleBackColor = false;
+            BTN_Delete.Click += BTN_Delete_Click;
             // 
             // BTN_Update
             // 
@@ -244,6 +247,7 @@
             BTN_Update.TabIndex = 7;
             BTN_Update.Text = "Cập nhật";
             BTN_Update.UseVisualStyleBackColor = false;
+            BTN_Update.Click += BTN_Update_Click;
             // 
             // label1
             // 
@@ -302,14 +306,21 @@
             // 
             // Screen_MemberCard
             // 
+            Screen_MemberCard.AllowUserToAddRows = false;
+            Screen_MemberCard.AllowUserToDeleteRows = false;
+            Screen_MemberCard.AllowUserToResizeColumns = false;
+            Screen_MemberCard.AllowUserToResizeRows = false;
             Screen_MemberCard.BackgroundColor = SystemColors.ButtonHighlight;
             Screen_MemberCard.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Screen_MemberCard.EditMode = DataGridViewEditMode.EditProgrammatically;
             Screen_MemberCard.Location = new Point(3, 51);
             Screen_MemberCard.Name = "Screen_MemberCard";
             Screen_MemberCard.RowHeadersWidth = 51;
+            Screen_MemberCard.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             Screen_MemberCard.RowTemplate.Height = 29;
             Screen_MemberCard.Size = new Size(814, 354);
             Screen_MemberCard.TabIndex = 0;
+            Screen_MemberCard.CellClick += Screen_MemberCard_CellClick;
             // 
             // TheThanhVien
             // 
@@ -343,13 +354,13 @@
         private PictureBox pictureBox1;
         private Button BTN_Delete;
         private Button BTN_Update;
-        private TextBox textBox5;
+        private TextBox Txt_DieDate;
         private PictureBox pictureBox3;
-        private TextBox textBox7;
+        private TextBox Txt_Available;
         private PictureBox pictureBox4;
         private Button BTN_Reset;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
+        private ComboBox Combo_Tier;
+        private TextBox Txt_Points;
         private PictureBox pictureBox2;
         private Label label2;
         private Button BTN_CreateNew;

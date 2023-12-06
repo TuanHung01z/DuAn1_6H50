@@ -21,7 +21,7 @@ namespace DAL1.DomainClass
         public DateTime? NgayHetHan { get; set; }
 
         [ForeignKey("SDTKhachHang")]
-        [InverseProperty("KhachHangs")]
-        public virtual KhachHang SDTKhachHangNavigation { get; set; } = null!;
+        [InverseProperty("TheThanhViens")]
+        public virtual KhachHang SDTKhachHangNavigation_TTV { get; set; } = null!;
     }
 }
