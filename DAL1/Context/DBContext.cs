@@ -38,6 +38,8 @@ public partial class DBContext : DbContext
 
     public virtual DbSet<TheLoai> TheLoais { get; set; }
 
+    public virtual DbSet<TheThanhVien> TheThanhViens { get; set; }
+
     public virtual DbSet<ThongKe> ThongKes { get; set; }
 
     public virtual DbSet<Ve> Ves { get; set; }
@@ -178,6 +180,16 @@ public partial class DBContext : DbContext
             entity.HasKey(e => e.MaTheLoai).HasName("PK__TheLoai__D73FF34AD4A54AEE");
 
             entity.Property(e => e.MaTheLoai).IsFixedLength();
+        });
+
+        modelBuilder.Entity<TheThanhVien>(entity =>
+        {
+            entity.HasKey(e => e.SDTKhachHang).HasName("PK__GAHHHHHHH");
+            entity.Property(e => e.SDTKhachHang).IsFixedLength();
+
+            entity.HasOne(d => d.SDTKhachHangNavigation).WithMany(p => p.TheThanhViens)
+                  .OnDelete(DeleteBehavior.ClientSetNull)
+                  .HasConstraintName("FK_fjsklfasjdkljdsklf");
         });
 
         modelBuilder.Entity<ThongKe>(entity =>

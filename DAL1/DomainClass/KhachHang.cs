@@ -21,4 +21,6 @@ public partial class KhachHang
 
     [InverseProperty("SdtkhachHangNavigation")]
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
+    [InverseProperty("SDTKhachHangNavigation_TTV")]
+    public virtual ICollection<TheThanhVien> TheThanhViens { get; set; } = new List<TheThanhVien>();
 }

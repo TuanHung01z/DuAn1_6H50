@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL1.DomainClass
 {
-    public class TheThanhVien
+    [Table("TheThanhVien")]
+    public partial class TheThanhVien
     {
         [Key]
-        [ForeignKey("SDTKhachHang")]
         [StringLength(25)]
         public string SDTKhachHang { get; set; } = null!;
         [Column(TypeName = "int")]
@@ -23,7 +19,9 @@ namespace DAL1.DomainClass
         public DateTime? NgayHieuLuc { get; set; }
         [Column(TypeName = "datetime")]
         public DateTime? NgayHetHan { get; set; }
-        [InverseProperty("SDTKhachHangNavigation")]
-        public virtual ICollection<KhachHang> KhachHangs { get; set; } = new List<KhachHang>();
+
+        [ForeignKey("SDTKhachHang")]
+        [InverseProperty("KhachHangs")]
+        public virtual KhachHang SDTKhachHangNavigation { get; set; } = null!;
     }
 }
