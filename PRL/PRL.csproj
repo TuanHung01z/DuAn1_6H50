@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj" />
+    <ProjectReference Include="..\DAL1\DAL1.csproj" />
   </ItemGroup>
 
   <ItemGroup>

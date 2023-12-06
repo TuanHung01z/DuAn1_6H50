@@ -86,6 +86,7 @@
             Txt_SvcName.ForeColor = Color.Black;
             Txt_SvcName.Location = new Point(297, 457);
             Txt_SvcName.Margin = new Padding(3, 2, 3, 2);
+            Txt_SvcName.MaxLength = 50;
             Txt_SvcName.Name = "Txt_SvcName";
             Txt_SvcName.Size = new Size(239, 22);
             Txt_SvcName.TabIndex = 125;
@@ -107,7 +108,7 @@
             BTN_Delete.FlatStyle = FlatStyle.System;
             BTN_Delete.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BTN_Delete.ForeColor = Color.White;
-            BTN_Delete.Location = new Point(558, 526);
+            BTN_Delete.Location = new Point(558, 506);
             BTN_Delete.Margin = new Padding(3, 2, 3, 2);
             BTN_Delete.Name = "BTN_Delete";
             BTN_Delete.Size = new Size(152, 34);
@@ -121,7 +122,7 @@
             BTN_CreateSvc.FlatStyle = FlatStyle.System;
             BTN_CreateSvc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BTN_CreateSvc.ForeColor = Color.White;
-            BTN_CreateSvc.Location = new Point(558, 417);
+            BTN_CreateSvc.Location = new Point(558, 430);
             BTN_CreateSvc.Margin = new Padding(3, 2, 3, 2);
             BTN_CreateSvc.Name = "BTN_CreateSvc";
             BTN_CreateSvc.Size = new Size(152, 34);
@@ -138,6 +139,7 @@
             Txt_Details.ForeColor = Color.Black;
             Txt_Details.Location = new Point(297, 539);
             Txt_Details.Margin = new Padding(3, 2, 3, 2);
+            Txt_Details.MaxLength = 50;
             Txt_Details.Name = "Txt_Details";
             Txt_Details.Size = new Size(239, 22);
             Txt_Details.TabIndex = 115;
@@ -148,7 +150,7 @@
             BTN_Update.FlatStyle = FlatStyle.System;
             BTN_Update.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             BTN_Update.ForeColor = Color.White;
-            BTN_Update.Location = new Point(558, 471);
+            BTN_Update.Location = new Point(558, 468);
             BTN_Update.Margin = new Padding(3, 2, 3, 2);
             BTN_Update.Name = "BTN_Update";
             BTN_Update.Size = new Size(152, 34);
@@ -173,11 +175,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(132, 535);
+            label2.Location = new Point(116, 538);
             label2.Name = "label2";
-            label2.Size = new Size(151, 25);
+            label2.Size = new Size(175, 25);
             label2.TabIndex = 111;
-            label2.Text = "Chi Tiết Dịch Vụ:";
+            label2.Text = "Trạng Thái Dịch Vụ:";
             // 
             // Txt_ServiceID
             // 
@@ -187,6 +189,7 @@
             Txt_ServiceID.ForeColor = Color.Black;
             Txt_ServiceID.Location = new Point(297, 417);
             Txt_ServiceID.Margin = new Padding(3, 2, 3, 2);
+            Txt_ServiceID.MaxLength = 10;
             Txt_ServiceID.Name = "Txt_ServiceID";
             Txt_ServiceID.Size = new Size(239, 22);
             Txt_ServiceID.TabIndex = 119;
@@ -196,7 +199,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(132, 496);
+            label1.Location = new Point(176, 499);
             label1.Name = "label1";
             label1.Size = new Size(115, 25);
             label1.TabIndex = 112;
@@ -207,7 +210,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(132, 454);
+            label13.Location = new Point(151, 456);
             label13.Name = "label13";
             label13.Size = new Size(140, 25);
             label13.TabIndex = 113;
@@ -229,7 +232,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(132, 413);
+            label7.Location = new Point(177, 416);
             label7.Name = "label7";
             label7.Size = new Size(114, 25);
             label7.TabIndex = 114;
